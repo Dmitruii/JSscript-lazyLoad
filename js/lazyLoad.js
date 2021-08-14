@@ -38,7 +38,6 @@ function lazyScroll() {
         getMap();
     };
     // Endless loading
-    console.log(loadMoreBlock);
     if(!loadMoreBlock.classList.contains('_loading')) {
         loadMore();
     };
@@ -71,7 +70,6 @@ function lazyScrollCheck() {
 
 // Lazy map
 function getMap() {
-    console.log(123);
     // Position map
     const loadMapBlockPosition = LoadMapBlock.getBoundingClientRect().top + pageYOffset;
     // If we scroll to map
@@ -92,7 +90,6 @@ function getMap() {
 // Endless loading
 function loadMore() {
     // Position elem endless loading
-    console.log(123);
     const loadMapBlockPosition = LoadMapBlock.getBoundingClientRect().top + pageYOffset;
     // Height block endless loading
     const loadMoreBlockHeight = loadMoreBlock.offsetHeight;
